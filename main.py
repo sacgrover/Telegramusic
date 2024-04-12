@@ -409,13 +409,14 @@ async def help_start(event: types.Message):
     bot_name = bot_info.first_name.replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("`", "\\`")
     bot_username = bot_info.username.replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("`", "\\`")
     msg = "Hi, welcome to *DJEN MUSIC BOT*\n\n"
-    msg += "_To begin searching for music tag me and search via artist, track or album\\.\nSee examples below :_\n\n"
-    msg += "By Artist\n"
-    msg += "@{} artist Britney Spears\n\n".format(bot_username)
-    msg += "By Track\n"
-    msg += "@{} track Back in Black\n\n".format(bot_username)
-    msg += "By Album\n"
-    msg += "@{} album Abbey Road\n\n".format(bot_username)
+    msg += "_To begin searching for music tag me and search via artist, track, album or combinations of all three\\. See examples below :_\n\n"
+    msg += "@{} song name\n\n".format(bot_username)
+    msg += "or\n"
+    msg += "@{} artist\n\n".format(bot_username)
+    msg += "or\n"
+    msg += "@{} song name artist\n\n".format(bot_username)
+    msg += "or\n"
+    msg += "@{} artist album\n\n".format(bot_username)
     msg += "For support visit @pepedjen"
     await event.answer(msg, parse_mode="MarkdownV2")
     

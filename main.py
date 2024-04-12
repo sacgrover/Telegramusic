@@ -409,7 +409,7 @@ async def help_start(event: types.Message):
     bot_name = bot_info.first_name.replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("`", "\\`")
     bot_username = bot_info.username.replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("`", "\\`")
     msg = "Hi, welcome to *DJEN MUSI Bot*\n"
-    msg += "_To begin searching for music tag me and search via artist, track or album. See examples below :_\n\n"
+    msg += "_To begin searching for music tag me and search via artist, track or album\nSee examples below :_\n\n"
     msg += "By Artist\n"
     msg += "@{} artist Britney Spears\n\n".format(bot_username)
     msg += "By Track\n"
